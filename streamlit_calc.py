@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.title("Calculadora do LF")
-valor1 = st.number_input("Digite o Preço 1:", value=None)
-valor2 = st.number_input("Digite o Preço 2:", value=None)
+valor1 = st.number_input("Digite o Preço 1:", value=None, format="%0.4f")
+valor2 = st.number_input("Digite o Preço 2:", value=None, format="%0.4f")
 
 lista = [0.10,0.45 , 0.8, 1]
 taxas = st.selectbox("Escolha uma taxa:",lista,index=None,placeholder="Escolha uma taxa")
